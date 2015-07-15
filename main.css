@@ -1,18 +1,10 @@
-/*get that shit*/
-nav {
-	padding:1px;
-	padding-bottom:1em;
-}
-
-button {
-	margin: 1em;
-}
 
 a, a:hover {
 	text-decoration: none;
 	font-size: 20px;
 }
 
+<<<<<<< HEAD
 #call
 {
 	display:block;
@@ -21,6 +13,9 @@ a, a:hover {
 
 body
 {
+=======
+body {
+>>>>>>> fa875b20f7556903c1eb090d4c9ae5bce7aa7ce9
 	font-family: 'Lato';
 	background-color: #A5A5A5;
 
@@ -37,7 +32,7 @@ ul
 	list-style-type: square;
 }
 
-.footer {
+/* .footer {
 	position:fixed;
 	bottom:10px;
 	border-top:1px solid #e3e3e3;
@@ -45,7 +40,7 @@ ul
 	left:0px;
 	text-align:center;
 	padding:10px;
-}
+} */
 .navbar .navbar-nav {
   display: inline-block;
   float: none;

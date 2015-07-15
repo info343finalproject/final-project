@@ -30,16 +30,17 @@ myApp.config(function($routeProvider) {
   $scope.about = "Here's some information about this page."
 })
 
-// Services controller
+// Services page controller
 .controller('ServicesController', function($scope){
   $scope.url = "http://conference.unavsa.org/wp-content/uploads/2015/06/SEA-pic.jpg"
 })
 
-//Contact controller
+//Contact page controller
 .controller('ContactController', function($scope){
   $scope.url = "http://conference.unavsa.org/wp-content/uploads/2015/06/SEA-pic.jpg"
 })
 
+<<<<<<< HEAD
 .controller('validateCtrl', function($scope)
 {
   $scope.user = '';
@@ -52,3 +53,11 @@ var mail = function()
 {
   window.location.href = "mailto:Jeff@pureautomotiverepair.com";
 }
+=======
+//Collapses  mobile navbar after menu selection
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+>>>>>>> fa875b20f7556903c1eb090d4c9ae5bce7aa7ce9
