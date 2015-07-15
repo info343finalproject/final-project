@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*get that shit*/
 nav {
 	padding:1px;
@@ -6,4 +7,48 @@ nav {
 
 button {
 	margin: 1em;
+=======
+body
+{
+	font-family: 'Lato';
+
+}
+
+h1
+{
+	font-weight: 900;
+	text-align: center;
+	: underline;
+}
+
+/*These are the mobile rules*/
+@media screen and (max-width: 768px)
+{
+	h1
+	{
+		font-size: 24px;
+	}
+
+	div
+	{
+		padding:0.5px 0.5px 0.5px 0.5px;
+		margin: 0.25em 0.25em 0.25em 0.25em;
+	}
+}
+
+/*These are the desktop rules*/
+@media screen and (min-width: 768px)
+{
+	h1
+	{
+		font-size: 36px;
+	}
+
+	div
+	{
+		padding:1px 1px 1px 1px;
+		margin: 0.5em 0.5em 0.5em 0.5em;
+	}
+
+>>>>>>> 9a08eb5171230e5d08b017843a22f432c220b94f
 }
