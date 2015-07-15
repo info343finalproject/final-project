@@ -1,15 +1,18 @@
 /*get that shit*/
 
 
-<<<<<<< HEAD
 a, a:hover {
 	text-decoration: none;
 	font-size: 20px;
 }
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 776694915930b0cc87ad765d3576627be7fe1d10
+=======
+
+>>>>>>> eb95cba54164db1335c6ecaadf15677b2237322c
 body
 {
 	font-family: 'Lato';
@@ -71,13 +74,16 @@ ul
 		margin: 0.25em 0.25em 0.25em 0.25em;
 	}
 	@media (max-width: 767px) {
-    .btn-vert-block + .btn-vert-block {
-        margin-top: 10px;    
-    } 
-    .header {
-    	display:none !important;
-    }   
-}
+
+	    .btn-vert-block + .btn-vert-block {
+	        margin-top: 10px;    
+	    } 
+	    
+	    .header 
+	    {
+	    	display:none !important;
+	    }   
+	}
 }
 
 /*These are the desktop rules*/
