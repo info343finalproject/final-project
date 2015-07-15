@@ -7,6 +7,17 @@ nav {
 
 button {
 	margin: 1em;
+}
+
+a, a:hover {
+	text-decoration: none;
+	font-size: 26px;
+	color:#000000;
+}
+
+.navbar {
+	text-align:center;
+}
 =======
 body
 {
@@ -19,6 +30,16 @@ h1
 	font-weight: 900;
 	text-align: center;
 	: underline;
+}
+
+.footer {
+	position:fixed;
+	bottom:10px;
+	border-top:1px solid #e3e3e3;
+	width:100%;
+	left:0px;
+	text-align:center;
+	padding:10px;
 }
 
 /*These are the mobile rules*/
@@ -34,6 +55,11 @@ h1
 		padding:0.5px 0.5px 0.5px 0.5px;
 		margin: 0.25em 0.25em 0.25em 0.25em;
 	}
+	@media (max-width: 767px) {
+    .btn-vert-block + .btn-vert-block {
+        margin-top: 10px;    
+    }    
+}
 }
 
 /*These are the desktop rules*/
