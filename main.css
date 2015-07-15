@@ -4,11 +4,15 @@ body
 
 }
 
-h1
+h1, h2
 {
 	font-weight: 900;
 	text-align: center;
-	: underline;
+}
+
+ul
+{
+	list-style-type: square;
 }
 
 /*These are the mobile rules*/
@@ -16,7 +20,17 @@ h1
 {
 	h1
 	{
-		font-size: 24px;
+		font-size: 36px;
+	}
+
+	h2
+	{
+		font-size: 28px;
+	}
+
+	ul
+	{
+		font-size: 25px;
 	}
 
 	div
@@ -31,13 +45,22 @@ h1
 {
 	h1
 	{
-		font-size: 36px;
+		font-size: 50px;
+	}
+
+	h2
+	{
+		font-size: 40px;
+	}
+
+	ul
+	{
+		font-size: 35px;
 	}
 
 	div
 	{
 		padding:1px 1px 1px 1px;
-		margin: 0.5em 0.5em 0.5em 0.5em;
 	}
 
 }
