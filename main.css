@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+/*get that shit*/
+nav {
+	padding:1px;
+	padding-bottom:1em;
+}
+
+button {
+	margin: 1em;
+=======
 body
 {
 	font-family: 'Lato';
@@ -63,4 +73,5 @@ ul
 		padding:1px 1px 1px 1px;
 	}
 
+>>>>>>> 9a08eb5171230e5d08b017843a22f432c220b94f
 }
