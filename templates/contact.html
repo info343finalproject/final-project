@@ -1,51 +1,82 @@
-<form class="form-horizontal">
-	<fieldset>
+<div class="container-fluid">
+	<form class="form-horizontal" ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
+		<fieldset>
 
-		<!-- Form Name -->
-		<legend>CONTACT</legend>
+			<!-- Form Name -->
+			<legend>CONTACT</legend>
+			<div class="col-md-6">
+				<!-- Name input-->
+				<div class="control-group">
+				  <label class="control-label" for="textinput">NAME</label>
+				  <div class="controls">
+				    <input id="textinput" ng-model="user" name="user" type="text" class="input-xlarge" 
+				    placeholder="First name, Last name" required/>
+				    <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+				    	<span ng-show="myForm.user.$error.required">Username is required</span>
+				    </span>
+				  </div>
+				</div>
 
-		<!-- Name input-->
-		<div class="control-group">
-		  <label class="control-label" for="textinput">NAME</label>
-		  <div class="controls">
-		    <input id="textinput" name="textinput" type="text" class="input-xlarge">
-		    
-		  </div>
-		</div>
+				<!-- Email input-->
+				<div class="control-group">
+				  <label class="control-label" for="textinput">EMAIL</label>
+				  <div class="controls">
+				    <input id="textinput" name="email" ng-model="email" type="email" class="input-xlarge"
+				    placeholder="example@example.com" required/>
+				    <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+				    	<span ng-show="myForm.email.$error.required">Email is required.</span>
+				    	<span ng-show="myForm.email.$error.email">Invalid email address</span>
+				    </span>
+				  </div>
+				</div>
 
-		<!-- Email input-->
-		<div class="control-group">
-		  <label class="control-label" for="textinput">EMAIL</label>
-		  <div class="controls">
-		    <input id="textinput" name="textinput" type="text" class="input-xlarge">
-		    
-		  </div>
-		</div>
+				<!-- Subject input-->
+				<div class="control-group">
+				  <label class="control-label" for="textinput">SUBJECT</label>
+				  <div class="controls">
+				    <input id="textinput" name="subject" ng-model="subject" type="text" 
+				    placeholder="Subject example" class="input-xlarge" required>
+				    <span style="color:red" ng-show="myForm.subject.$dirty && myForm.subject.$invalid">
+				    	<span ng-show="myForm.subject.$error.required">Subject is required.</span>
+				    </span>
+				  </div>
+				</div>
 
-		<!-- Subject input-->
-		<div class="control-group">
-		  <label class="control-label" for="textinput">SUBJECT</label>
-		  <div class="controls">
-		    <input id="textinput" name="textinput" type="text" class="input-xlarge">
-		    
-		  </div>
-		</div>
+				<!-- Textarea -->
+				<div class="control-group">
+				  <label class="control-label" for="textarea">MESSAGE</label>
+				  <div class="controls">                     
+				    <textarea id="textarea" name="message" ng-model="message" 
+				    placeholder="This is a message" 
+				    required></textarea>
+				    <span style="color:red" ng-show="myForm.message.$dirty && myForm.message.$invalid">
+				    	<span ng-show="myForm.message.$error.required">Message is required.</span>
+				    </span>
+				  </div>
+				</div>
 
-		<!-- Textarea -->
-		<div class="control-group">
-		  <label class="control-label" for="textarea">MESSAGE</label>
-		  <div class="controls">                     
-		    <textarea id="textarea" name="textarea"></textarea>
-		  </div>
-		</div>
-
-		<!-- Button -->
-		<div class="control-group">
-		  <label class="control-label" for="singlebutton"></label>
-		  <div class="controls">
-		    <button id="singlebutton" name="singlebutton" class="btn btn-primary">SEND MESSAGE</button>
-		  </div>
-		</div>
-
-	</fieldset>
-</form>
+				<!-- Button -->
+				<div class="control-group">
+				  <label class="control-label" for="singlebutton"></label>
+				  <div class="controls">
+				    <button id="singlebutton" name="singlebutton" class="btn btn-primary"
+				    ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid"
+				    onclick="mail()">
+				    SEND MESSAGE</button>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h2>Call or text</h2>
+				<div class="col-md-6">
+					<h3>Via computer</h3>
+					<a href="tel:206-510-7007"><img id="call" src="images/call.png"/></a>
+				</div>
+				<div class="col-md-6">
+					<h3>Via mobile</h3>
+					<p id="phone" >206-510-7007</p>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>

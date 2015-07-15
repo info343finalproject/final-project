@@ -39,16 +39,3 @@ myApp.config(function($routeProvider) {
 .controller('ContactController', function($scope){
   $scope.url = "http://conference.unavsa.org/wp-content/uploads/2015/06/SEA-pic.jpg"
 })
-
-.controller('validateCtrl', function($scope)
-{
-  $scope.user = '';
-  $scope.email = '';
-  $scope.subject = '';
-  $scope.message = '';
-})
-
-var mail = function()
-{
-  window.location.href = "mailto:Jeff@pureautomotiverepair.com";
-}

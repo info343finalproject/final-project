@@ -13,11 +13,6 @@ a, a:hover {
 	font-size: 20px;
 }
 
-#call
-{
-	display:block;
-	margin:auto;
-}
 
 body
 {
@@ -26,7 +21,7 @@ body
 
 }
 
-h1, h2, h3, #phone
+h1, h2
 {
 	font-weight: 900;
 	text-align: center;
@@ -114,7 +109,6 @@ ul
 	{
 		padding:1px 1px 1px 1px;
 	}
-
 	#tag {
 		display: none !important;
 	}
