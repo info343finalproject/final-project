@@ -11,13 +11,11 @@ button {
 <<<<<<< HEAD
 a, a:hover {
 	text-decoration: none;
-	font-size: 26px;
-	color:#000000;
+	font-size: 20px;
 }
 
-.navbar {
-	text-align:center;
-}
+
+
 =======
 =======
 >>>>>>> 776694915930b0cc87ad765d3576627be7fe1d10
@@ -47,6 +45,15 @@ ul
 	text-align:center;
 	padding:10px;
 }
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
 
 /*These are the mobile rules*/
 @media screen and (max-width: 768px)
@@ -74,7 +81,10 @@ ul
 	@media (max-width: 767px) {
     .btn-vert-block + .btn-vert-block {
         margin-top: 10px;    
-    }    
+    } 
+    .header {
+    	display:none !important;
+    }   
 }
 }
 
@@ -99,6 +109,13 @@ ul
 	div
 	{
 		padding:1px 1px 1px 1px;
+	}
+	#tag {
+		display: none !important;
+	}
+
+	.glyphicon {
+		display:none !important;
 	}
 
 }
