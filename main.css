@@ -8,9 +8,21 @@ button {
 	margin: 1em;
 }
 
+<<<<<<< HEAD
+a, a:hover {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+
+=======
+=======
+>>>>>>> 776694915930b0cc87ad765d3576627be7fe1d10
 body
 {
 	font-family: 'Lato';
+	background-color: #A5A5A5;
 
 }
 
@@ -23,6 +35,25 @@ h1, h2
 ul
 {
 	list-style-type: square;
+}
+
+.footer {
+	position:fixed;
+	bottom:10px;
+	border-top:1px solid #e3e3e3;
+	width:100%;
+	left:0px;
+	text-align:center;
+	padding:10px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
 /*These are the mobile rules*/
@@ -48,6 +79,14 @@ ul
 		padding:0.5px 0.5px 0.5px 0.5px;
 		margin: 0.25em 0.25em 0.25em 0.25em;
 	}
+	@media (max-width: 767px) {
+    .btn-vert-block + .btn-vert-block {
+        margin-top: 10px;    
+    } 
+    .header {
+    	display:none !important;
+    }   
+}
 }
 
 /*These are the desktop rules*/
@@ -71,6 +110,13 @@ ul
 	div
 	{
 		padding:1px 1px 1px 1px;
+	}
+	#tag {
+		display: none !important;
+	}
+
+	.glyphicon {
+		display:none !important;
 	}
 
 }

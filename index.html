@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
   <script src="https://code.jquery.com/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+=======
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/logo.png"/>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+>>>>>>> 8711ae6905ab9e293efd55a86c3aa2f5a210c39b
 
   <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
@@ -17,51 +26,38 @@
 <!-- Adds fonts from google fonts -->
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
-  <title>Multipage Example</title>
+  <title>Pure Automotive Repair</title>
 </head>
 <body>
   <div class="container">
     <div class="header">
         <h1>Pure Automotive Repair</h1>
-     </div>   
-        
-        <!-- Nav Bar -->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#tasks-navbar" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!-- Nav Bar Buttons -->
-                <div class="collapse navbar-collapse" id="tasks-navbar">
-                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                      <div class="btn-group" role="group">
-                        <a href="#/"><button type="button" class="btn btn-default">Home</button></a>
-                      </div>
-                      <div class="btn-group" role="group">
-                        <a href="#/about"><button type="button" class="btn btn-default">About</button></a>
-                      </div>
-                      <div class="btn-group" role="group">
-                        <a href="#/services"><button type="button" class="btn btn-default">Services</button></a>
-                      </div>
-                      <div class="btn-group" role="group">
-                        <a href="#/contact"><button type="button" class="btn btn-default">Contact</button></a>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Add buttons here -->
+    </div>   
+      
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" id="tag">Pure Automotive Repair</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#/">Home <span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="#/about">About <span class="glyphicon glyphicon-info-sign"></span></a></li> 
+            <li><a href="#/services">Services <span class="glyphicon glyphicon-wrench"></span></a></li> 
+            <li><a href="#/contact">Contact <span class="glyphicon glyphicon-phone"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
    
 
-      </div>
-    </div>
+  </div>
     <div ng-app="myApp">
       <div ng-view></div>
     </div>
