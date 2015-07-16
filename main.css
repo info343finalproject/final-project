@@ -6,13 +6,6 @@ a, a:hover {
 	font-size: 20px;
 }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 776694915930b0cc87ad765d3576627be7fe1d10
-=======
-
->>>>>>> eb95cba54164db1335c6ecaadf15677b2237322c
 body
 {
 	font-family: 'Lato';
@@ -20,6 +13,19 @@ body
 
 }
 
+/*.header {
+	text-align:left;background-image: url("http://www.friendshipcac.com/images/slides/url.jpg");
+	background-size:cover;*/
+}
+
+#header {
+	text-align: left;
+	color: #FFFFFF;
+}
+
+.service-list {
+	list-style: none;
+}
 h1, h2
 {
 	font-weight: 900;
@@ -31,15 +37,6 @@ ul
 	list-style-type: square;
 }
 
-/* .footer {
-	position:fixed;
-	bottom:10px;
-	border-top:1px solid #e3e3e3;
-	width:100%;
-	left:0px;
-	text-align:center;
-	padding:10px;
-} */
 .navbar .navbar-nav {
   display: inline-block;
   float: none;

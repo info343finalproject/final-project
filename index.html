@@ -1,49 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="images/logo.png"/>
+<link rel="shortcut icon" href="images/wrench.png">
 <script src="https://code.jquery.com/jquery.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-=======
-  <script src="https://code.jquery.com/jquery.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="images/logo.png"/>
-  <script src="https://code.jquery.com/jquery.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
->>>>>>> eb95cba54164db1335c6ecaadf15677b2237322c
-
-  <!-- Angular -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-
-  <!-- Add angular route library here -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
-
-  <script src="main.js"></script>
-  <link href = "main.css" rel="stylesheet" type = "text/css"/>
-
+<!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<!-- Add angular route library here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
+<script src="main.js"></script>
+<link href = "main.css" rel="stylesheet" type = "text/css"/>  
 <!-- Adds fonts from google fonts -->
-<<<<<<< HEAD
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-<meta charset="utf-8">
 <title>Pure Automotive Repair</title>
-=======
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-  <meta charset="utf-8">
-  <title>Pure Automotive Repair</title>
-  <link rel="shortcut icon" href="images/wrench.png">
->>>>>>> eb95cba54164db1335c6ecaadf15677b2237322c
 </head>
 <body>
   <div class="container">
     <div class="header">
-        <h1>Pure Automotive Repair</h1>
+        <h1 id="header">Pure Automotive Repair</h1>
     </div>   
       
     <!-- Nav Bar -->
@@ -55,11 +32,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> 
           </button>
-          <a class="navbar-brand" id="tag">Pure Automotive Repair</a>
+          <a class="navbar-brand" id="tag" href="#/">Pure Automotive Repair</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li role="separator" class="divider"><a href="#/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="#/about"><span class="glyphicon glyphicon-info-sign"></span> About</a></li> 
             <li><a href="#/services"><span class="glyphicon glyphicon-wrench"></span> Services</a></li> 
             <li><a href="#/contact"><span class="glyphicon glyphicon-phone"></span> Contact</a></li>
