@@ -1,30 +1,20 @@
+/* Style sheet rules */
 
-a, a:hover {
-	text-decoration: none;
-	font-size: 20px;
+/* Custom fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+body
+{
+	font-family: 'Lato', 'Arial', 'Verdana';
+	background-color: #A5A5A5;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 #call
 {
 	display:block;
 	margin:auto;
 }
 
->>>>>>> 97e9c4ffbb76c989f523adb9a72138297706b927
-body
-{
-=======
-body {
->>>>>>> fa875b20f7556903c1eb090d4c9ae5bce7aa7ce9
-	font-family: 'Lato';
-	background-color: #A5A5A5;
-
-}
-
-<<<<<<< HEAD
 /*.header {
 	text-align:left;background-image: url("http://www.friendshipcac.com/images/slides/url.jpg");
 	background-size:cover;*/
@@ -38,10 +28,8 @@ body {
 .service-list {
 	list-style: none;
 }
-h1, h2
-=======
+
 h1, h2, h3, #phone
->>>>>>> 97e9c4ffbb76c989f523adb9a72138297706b927
 {
 	font-weight: 900;
 	text-align: center;
@@ -60,6 +48,11 @@ ul
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+a, a:hover {
+	text-decoration: none;
+	font-size: 20px;
 }
 
 /*These are the mobile rules*/
@@ -99,8 +92,16 @@ ul
 }
 
 /*These are the desktop rules*/
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px) 
 {
+
+	body 
+	{
+		background-image:url("images/logo.png");
+		background-position: center;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+	}
 	h1
 	{
 		font-size: 50px;
@@ -118,7 +119,7 @@ ul
 
 	div
 	{
-		padding:1px 1px 1px 1px;
+		/*padding:1px 1px 1px 1px;*/
 	}
 
 	#tag {
