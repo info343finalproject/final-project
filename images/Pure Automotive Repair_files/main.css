@@ -1,47 +1,27 @@
+/*get that shit*/
+nav {
+	padding:1px;
+	padding-bottom:1em;
+}
+
+button {
+	margin: 1em;
+}
 
 a, a:hover {
 	text-decoration: none;
 	font-size: 20px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-#call
-{
-	display:block;
-	margin:auto;
-}
 
->>>>>>> 97e9c4ffbb76c989f523adb9a72138297706b927
 body
 {
-=======
-body {
->>>>>>> fa875b20f7556903c1eb090d4c9ae5bce7aa7ce9
 	font-family: 'Lato';
 	background-color: #A5A5A5;
 
 }
 
-<<<<<<< HEAD
-/*.header {
-	text-align:left;background-image: url("http://www.friendshipcac.com/images/slides/url.jpg");
-	background-size:cover;*/
-}
-
-#header {
-	text-align: left;
-	color: #FFFFFF;
-}
-
-.service-list {
-	list-style: none;
-}
 h1, h2
-=======
-h1, h2, h3, #phone
->>>>>>> 97e9c4ffbb76c989f523adb9a72138297706b927
 {
 	font-weight: 900;
 	text-align: center;
@@ -52,6 +32,15 @@ ul
 	list-style-type: square;
 }
 
+.footer {
+	position:fixed;
+	bottom:10px;
+	border-top:1px solid #e3e3e3;
+	width:100%;
+	left:0px;
+	text-align:center;
+	padding:10px;
+}
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -120,7 +109,6 @@ ul
 	{
 		padding:1px 1px 1px 1px;
 	}
-
 	#tag {
 		display: none !important;
 	}
