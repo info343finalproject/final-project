@@ -55,6 +55,10 @@ a, a:hover {
 	font-size: 20px;
 }
 
+.btn {
+	border-radius: 0;
+}
+
 /*These are the mobile rules*/
 @media screen and (max-width: 768px)
 {
@@ -122,9 +126,9 @@ a, a:hover {
 		/*padding:1px 1px 1px 1px;*/
 	}
 
-	#tag {
+	/*#tag {
 		display: none !important;
-	}
+	}*/
 
 	.glyphicon {
 		display:none !important;
