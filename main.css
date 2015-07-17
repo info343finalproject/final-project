@@ -23,11 +23,6 @@ body
 	margin:auto;
 }
 
-/*.header {
-	text-align:left;background-image: url("http://www.friendshipcac.com/images/slides/url.jpg");
-	background-size:cover;*/
-}
-
 #header {
 	text-align: left;
 	color: #FFFFFF;
@@ -87,6 +82,7 @@ a, a:hover {
 .green-box {
 	color: #FFFFFF;
 	background-color: #87E226;
+	opacity: 0.5;
 }
 
 .white-box {
@@ -112,27 +108,10 @@ a, a:hover {
 		font-size: 25px;
 	}
 
-	/*div
-	{
-		padding:0.5px 0.5px 0.5px 0.5px;
-		margin: 0.25em 0.25em 0.25em 0.25em;
-	}*/
-
 	.transparent-box, .green-box, .white-box {
 		height: 300px;
 	}
 
-	/*@media (max-width: 767px) {
-
-	    .btn-vert-block + .btn-vert-block {
-	        margin-top: 10px;    
-	    } 
-	    
-	    .header 
-	    {
-	    	display:none !important;
-	    }
-	}*/
 }
 
 /*These are the desktop rules*/
@@ -164,10 +143,6 @@ a, a:hover {
 	.transparent-box {
 		height: 600px;
 	}
-
-	/*#tag {
-		display: none !important;
-	}*/
 
 	.glyphicon {
 		display:none !important;

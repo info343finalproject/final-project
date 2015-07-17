@@ -22,7 +22,6 @@ myApp.config(function($routeProvider) {
 
 // Landing page controller
 .controller('LandingController', function($scope){
-  $scope.number = 10
 })
 
 // About page controller
