@@ -39,8 +39,8 @@ myApp.config(function($routeProvider) {
   $scope.url = "http://conference.unavsa.org/wp-content/uploads/2015/06/SEA-pic.jpg"
 })
 
-.controller('validateCtrl', function($scope)
-{
+// Validates input from contact page
+.controller('validateCtrl', function($scope) {
   $scope.user = '';
   $scope.email = '';
   $scope.subject = '';
@@ -52,7 +52,7 @@ var mail = function()
   window.location.href = "mailto:Jeff@pureautomotiverepair.com";
 }
 
-//Collapses  mobile navbar after menu selection
+//Collapses mobile navbar after menu selection
 $(document).ready(function () {
   $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
