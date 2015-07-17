@@ -39,6 +39,7 @@ h1, h2, h3, #phone
 	position: relative;
   	top: 50%;
   	transform: translateY(-50%);
+  	margin: 0;
 }
 
 ul
@@ -56,9 +57,15 @@ ul
   text-align: center;
 }
 
-a, a:hover {
+a {
 	text-decoration: none;
 	font-size: 20px;
+	color:#3E3E43;
+}
+a:hover {
+	text-decoration: none;
+	font-size: 20px;
+	color:#87E226;
 }
 
 .btn {
@@ -69,8 +76,6 @@ a, a:hover {
 .transparent-box, .green-box , .white-box {
 	width: 100%;
 	height: 600px;
-	margin: 0;
-	padding: 0;
 }
 
 .transparent-box {
@@ -88,6 +93,14 @@ a, a:hover {
 .white-box {
 	color: #3E3E43;
 	background-color: #FFFFFF;
+}
+
+#call-text {
+	margin-top:1em;
+}
+
+#contact-head {
+	margin-bottom: 1em;
 }
 
 /*These are the mobile rules*/

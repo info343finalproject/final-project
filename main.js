@@ -52,7 +52,7 @@ var mail = function()
   window.location.href = "mailto:Jeff@pureautomotiverepair.com";
 }
 
-//Collapses mobile navbar after menu selection
+// Collapses mobile navbar after menu selection
 $(document).ready(function () {
   $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');

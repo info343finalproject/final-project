@@ -4,7 +4,7 @@
 
 			<!-- Form Name -->
 			<legend>CONTACT</legend>
-			<div class="col-md-6">
+			<div class="col-md-4">
 				<!-- Name input-->
 				<div class="control-group">
 				  <label class="control-label" for="textinput">NAME</label>
@@ -12,7 +12,7 @@
 				    <input id="textinput" ng-model="user" name="user" type="text" class="input-xlarge" 
 				    placeholder="First name, Last name" required/>
 				    <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
-				    	<span ng-show="myForm.user.$error.required">Username is required</span>
+				    	<span ng-show="myForm.user.$error.required">First and last name is required</span>
 				    </span>
 				  </div>
 				</div>
@@ -66,15 +66,23 @@
 				  </div>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<h2>Call or text</h2>
-				<div class="col-md-6">
+
+			<!-- Map -->
+			<div  id="map" class="col-md-4">
+				<a href="https://www.google.com/maps/place/1716+S+Hanford+St,+Seattle,+WA+98144/@47.575307,-122.309909,17z/data=!3m1!4b1!4m2!3m1!1s0x54906a7ddb0eb14d:0x7b0e2198053d2206">Pure Automotive Repair<br/>1716 South Hanford Street<br/>Seattle, Washington 98144</a>
+				<iframe width='80%' height='300px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/jtopasna.4a70938e/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoianRvcGFzbmEiLCJhIjoiNzI1YTRlZTFjNzRjODQ2NzJhYmRiOTkwZTBiZGE4MzYifQ.u0BRAAbAEbGgPF5_nf4Y8g'></iframe>
+			</div>
+			
+			<!-- Contact Links-->
+			<div class="col-md-4" id="call-text">
+				<div id="contact-head"><h2>Call or text</h2></div>
+				<div class="col-xs-6">
 					<h3>Via computer</h3>
 					<a href="tel:206-510-7007"><img id="call" src="images/call.png"/></a>
 				</div>
-				<div class="col-md-6">
+				<div class="col-xs-6">
 					<h3>Via mobile</h3>
-					<p id="phone" >206-510-7007</p>
+					<a href="tel:1-206-555-1212">206-555-1212</a>
 				</div>
 			</div>
 		</fieldset>
