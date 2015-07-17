@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	  <script src="main_files/jquery.js"></script>
+	  <link href="main_files/bootstrap.css" rel="stylesheet" type="text/css">
+	  <script src="main_files/bootstrap.js"></script>
+
+	  <!-- Angular -->
+	  <script src="main_files/angular.js"></script>
+
+	  <!-- Add angular route library here -->
+	  <script src="main_files/angular-route.js"></script>
+
+	  <script src="main_files/main.js"></script>
+	  <link href="main_files/main.css" rel="stylesheet" type="text/css">
+
+	<!-- Adds fonts from google fonts -->
+	<link href="main_files/css.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+	</head>
+	<body>
+		<div class="container-fluid">
+        	<!-- Nav Bar -->
+	        <nav class="navbar navbar-default">
+	            <div class="container-fluid">
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tasks-navbar" aria-expanded="false">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                </div>
+	                <!-- Nav Bar Buttons -->
+	                <div class="collapse navbar-collapse" id="tasks-navbar">
+						<div class="btn-group" role="group">
+							<a href="#/about"><button type="button" class="btn btn-default">About</button></a>
+						</div>
+						<div class="btn-group" role="group">
+							<a href="#/contact"><button type="button" class="btn btn-default">Contact</button></a>
+						</div>
+						<div class="btn-group" role="group">
+							<a href="#/gallery"><button type="button" class="btn btn-default">Gallery</button></a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="ng-scope" ng-app="myApp">
+				<!-- ngView:  --><div class="ng-scope" ng-view=""><div class="contact ng-scope">
+	<div>
+		<!-- Adding hyperlinks to the images -->
+		<h1>Follow Me on social media!</h1>
+		<a href="https://www.facebook.com/GotTrix?fref=ts">
+			<img id="icon" src="main_files/facebook.png">
+		</a>	
+		<a href="http://raif-san.deviantart.com/">
+			<img id="icon" src="main_files/dev.png">
+		</a>
+		<a href="https://www.youtube.com/user/RaifXSan">
+			<img id="icon" src="main_files/youtube.png">
+		</a>   
+		<a href="mailto:patrick.lamourea@gmail.com?Subject=I%27m%20Interested" target="_top">
+			<img id="icon" src="main_files/outlook.png">
+		</a>
+	</div>
+	<form class="form-horizontal ng-pristine ng-valid ng-scope" ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate="">
+			<div class="col-md-6">
+				<!-- Name input-->
+				<div class="control-group">
+				  <label class="control-label" for="textinput">NAME</label>
+				  <div class="controls">
+				    <input id="textinput" ng-model="user" name="user" class="input-xlarge ng-pristine ng-untouched ng-valid" placeholder="First name, Last name" required="" type="text">
+				    <span style="color:red" ng-show="myForm.user.$dirty &amp;&amp; myForm.user.$invalid">
+				    	<span ng-show="myForm.user.$error.required">Username is required</span>
+				    </span>
+				  </div>
+				</div>
+
+				<!-- Email input-->
+				<div class="control-group">
+				  <label class="control-label" for="textinput">EMAIL</label>
+				  <div class="controls">
+				    <input id="textinput" name="email" ng-model="email" class="input-xlarge ng-pristine ng-untouched ng-valid" placeholder="example@example.com" required="" type="email">
+				    <span style="color:red" ng-show="myForm.email.$dirty &amp;&amp; myForm.email.$invalid">
+				    	<span ng-show="myForm.email.$error.required">Email is required.</span>
+				    	<span ng-show="myForm.email.$error.email">Invalid email address</span>
+				    </span>
+				  </div>
+				</div>
+
+				<!-- Subject input-->
+				<div class="control-group">
+				  <label class="control-label" for="textinput">SUBJECT</label>
+				  <div class="controls">
+				    <input id="textinput" name="subject" ng-model="subject" placeholder="Subject example" class="input-xlarge ng-pristine ng-untouched ng-valid" required="" type="text">
+				    <span style="color:red" ng-show="myForm.subject.$dirty &amp;&amp; myForm.subject.$invalid">
+				    	<span ng-show="myForm.subject.$error.required">Subject is required.</span>
+				    </span>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="control-group">
+				  <label class="control-label" for="textarea">MESSAGE</label>
+				  <div class="controls">                     
+				    <textarea class="ng-pristine ng-untouched ng-valid" id="textarea" name="message" ng-model="message" placeholder="This is a message" required=""></textarea>
+				    <span style="color:red" ng-show="myForm.message.$dirty &amp;&amp; myForm.message.$invalid">
+				    	<span ng-show="myForm.message.$error.required">Message is required.</span>
+				    </span>
+				  </div>
+				</div>
+
+				<!-- Button -->
+				<div class="control-group">
+				  <label class="control-label" for="singlebutton"></label>
+				  <div class="controls">
+				    <button id="singlebutton" name="singlebutton" class="btn btn-primary" ng-disabled="myForm.user.$dirty &amp;&amp; myForm.user.$invalid || myForm.email.$dirty &amp;&amp; myForm.email.$invalid" onclick="mail()">
+				    SEND MESSAGE</button>
+				  </div>
+				</div>
+			</div>
+		</form>
+</div>
+</div>
+				<div>Footer content</div>
+			</div>
+		</div>
+	
+</body></html>

@@ -1,3 +1,4 @@
+var service
 var myApp = angular.module('myApp', ['ngRoute'])
 
 myApp.config(function($routeProvider) {
@@ -46,6 +47,25 @@ myApp.config(function($routeProvider) {
   $scope.subject = '';
   $scope.message = '';
 })
+
+// adds the json file
+var clickMe = function()
+{
+  $.getJSON("templates/serviceQuote.json", function(data) 
+  {
+    $('#json').append('<table>')
+    for(var i = 0; i < data.length; i++)
+    {
+      $('#json').append('<tr>')
+      for(var j = 0; j < 2; j++)
+      {
+        $('#json').append('<td>' + data.services.fix.BRAKES.description + '</td>')
+      }
+      $('#json').append('</tr>')
+    }
+    $('#json').append('</table>')
+  })
+}
 
 var mail = function()
 {

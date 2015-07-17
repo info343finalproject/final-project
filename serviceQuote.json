@@ -1,0 +1,18 @@
+{
+	"services":
+	{
+		"fix" :
+		{
+			"BRAKES":
+			{
+				"description" : "Brakes",
+				"price" : 10
+			},
+			"BELTS":
+			{
+				"description" : "Beltss",
+				"price" : 10
+			}
+		}	
+	}
+}
