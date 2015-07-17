@@ -33,10 +33,6 @@ body
 	color: #FFFFFF;
 }
 
-.service-list {
-	list-style: none;
-}
-
 h1, h2, h3, #phone
 {
 	font-weight: 900;
@@ -74,7 +70,6 @@ a, a:hover {
 /* Styling for the content boxes */
 .transparent-box, .green-box , .white-box {
 	width: 100%;
-	height: 600px;
 }
 
 .transparent-box {
@@ -92,6 +87,21 @@ a, a:hover {
 	color: #3E3E43;
 	background-color: #FFFFFF;
 }
+
+.icon-box {
+	width:125px;
+	height: 125px;
+	border:7px solid #87E226;
+}
+
+/* Styling for images */
+.services-image {
+	width: 50%;
+	height: 100%;
+	background-image: url("images/services1.jpg");
+	display: inline;
+}
+
 
 /*These are the mobile rules*/
 @media screen and (max-width: 767px) {
@@ -160,9 +170,9 @@ a, a:hover {
 		font-size: 35px;
 	}
 
-	.transparent-box {
-		height: 600px;
-	}
+	.transparent-box, .green-box , .white-box {
+	height: 600px;
+}
 
 	/*#tag {
 		display: none !important;
