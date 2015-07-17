@@ -44,6 +44,7 @@ h1, h2, h3, #phone
 	position: relative;
   	top: 50%;
   	transform: translateY(-50%);
+  	margin: 0;
 }
 
 ul
@@ -74,8 +75,6 @@ a, a:hover {
 .transparent-box, .green-box , .white-box {
 	width: 100%;
 	height: 600px;
-	margin: 0;
-	padding: 0;
 }
 
 .transparent-box {
