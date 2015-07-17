@@ -10,6 +10,7 @@ Black = #3E3E43
 
 /* Custom fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+@charset "UTF-8";
 
 body
 {
@@ -71,10 +72,7 @@ a:hover {
 /* Styling for the content boxes */
 .transparent-box, .green-box , .white-box {
 	width: 100%;
-<<<<<<< HEAD
 	height: 600px;
-=======
->>>>>>> 5c7296397a85353ffb9d6a1c7b5a0ef04e5d2d12
 }
 
 .transparent-box {
@@ -94,7 +92,6 @@ a:hover {
 	background-color: #FFFFFF;
 }
 
-<<<<<<< HEAD
 #call-text {
 	margin-top:1em;
 }
@@ -103,7 +100,7 @@ a:hover {
 	margin-bottom: 1em;
 }
 
-=======
+
 .icon-box {
 	width:125px;
 	height: 125px;
@@ -118,8 +115,6 @@ a:hover {
 	display: inline;
 }
 
-
->>>>>>> 5c7296397a85353ffb9d6a1c7b5a0ef04e5d2d12
 /*These are the mobile rules*/
 @media screen and (max-width: 767px) {
 
@@ -179,3 +174,4 @@ a:hover {
 	}
 
 }
+
