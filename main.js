@@ -78,8 +78,3 @@ $(document).ready(function () {
     $(".navbar-collapse").collapse('hide');
   });
 });
-
-$.post('contact.php', {user: $scope.user, email: $scope.email, subject: $scope.subject, message: $scope.message},function()
-{
-  alert("message sent!");
-})
