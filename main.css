@@ -113,7 +113,8 @@ a:hover {
 .service-box {
 	color: #3E3E43;
 	background-image: url("images/whitepixel.png");
-	height: 1200px;
+	min-height: 1200px;
+	overflow: hidden;
 }
 .icon-box {
 	background-repeat: no-repeat;
