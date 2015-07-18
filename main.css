@@ -138,6 +138,12 @@ a:hover {
 	display: inline;
 }
 
+/* Styling for the map */
+iframe
+{
+	border: medium solid black;
+}
+
 /*These are the mobile rules*/
 @media screen and (max-width: 767px) {
 

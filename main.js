@@ -48,24 +48,6 @@ myApp.config(function($routeProvider) {
   $scope.message = '';
 })
 
-// adds the json file
-var clickMe = function()
-{
-  $.getJSON("templates/serviceQuote.json", function(data) 
-  {
-    $('#json').append('<table>')
-    for(var i = 0; i < data.length; i++)
-    {
-      $('#json').append('<tr>')
-      for(var j = 0; j < 2; j++)
-      {
-        $('#json').append('<td>' + data.services.fix.BRAKES.description + '</td>')
-      }
-      $('#json').append('</tr>')
-    }
-    $('#json').append('</table>')
-  })
-}
 
 var mail = function()
 {
@@ -78,3 +60,7 @@ $(document).ready(function () {
     $(".navbar-collapse").collapse('hide');
   });
 });
+
+
+
+
