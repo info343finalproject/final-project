@@ -90,18 +90,16 @@ a:hover {
 .transparent-box {
 	color: #FFFFFF;
 	background-image: url("images/transparentpixel.png");
-	background-repeat: repeat;
 }
 
 .green-box {
 	color: #FFFFFF;
-	background-color: #87E226;
-	opacity: 0.5;
+	background-image: url("images/greenpixel.png");
 }
 
 .white-box {
 	color: #3E3E43;
-	background-color: #FFFFFF;
+	background-image: url("images/whitepixel.png");
 }
 
 #call-text {
@@ -112,12 +110,25 @@ a:hover {
 	margin-bottom: 1em;
 }
 
-
-.icon-box {
-	width:125px;
-	height: 125px;
-	border:7px solid #87E226;
+.service-box {
+	color: #3E3E43;
+	background-image: url("images/whitepixel.png");
+	min-height: 1200px;
+	overflow: hidden;
 }
+.icon-box {
+	background-repeat: no-repeat;
+	background-position: center;
+	width:200px;
+	height: 200px;
+	border:7px solid #87E226;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	border-radius: 100px;
+}
+
 
 /* Styling for images */
 .services-image {
