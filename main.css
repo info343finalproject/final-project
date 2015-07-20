@@ -22,8 +22,8 @@ Black = #3E3E43
          url('fonts/futuraextended-webfont.woff') format('woff'),
          url('fonts/futuraextended-webfont.ttf') format('truetype'),
          url('fonts/futuraextended-webfont.svg#futuraextendedregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    /*font-weight: normal;
+    font-style: normal;*/
 
 }
 
@@ -40,7 +40,7 @@ td
 
 body
 {
-	font-family: 'Lato', 'Arial', 'Verdana';
+	font-family: 'futuraextendedregular', 'Arial', 'Verdana';
 	background-color: #A5A5A5;
 }
 
@@ -57,7 +57,7 @@ body
 
 h1, #phone
 {
-	font-weight: 900;
+	/*font-weight: 900;*/
 	text-align: center;
 	position: relative;
   	top: 50%;
@@ -68,6 +68,12 @@ h1, #phone
 ul
 {
 	list-style-type: square;
+}
+
+.navbar {
+	min-height: 80px;
+	margin-bottom: 0;
+	border: 0;
 }
 
 .navbar .navbar-nav {
@@ -83,12 +89,12 @@ ul
 a {
 	text-decoration: none;
 	font-size: 20px;
-	color:#3E3E43;
+	color:#87E226;
 }
 a:hover {
 	text-decoration: none;
 	font-size: 20px;
-	color:#87E226;
+	color:#FFFFFF;
 }
 
 .btn {
@@ -121,6 +127,18 @@ a:hover {
   	color: #3E3E43;
 	min-height: 600px;*/
 	overflow: hidden;
+}
+
+.split-display {
+	padding: 0; 
+	margin: -15;
+	text-align: center;
+}
+
+.split-display h2 {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
 }
 
 #call-text {
@@ -170,6 +188,20 @@ iframe
 	border: medium solid black;
 }
 
+/* Footer styling */
+footer {
+	min-height: 80px;
+	padding:1em;
+	color: #FFFFFF;
+	background-color:#222222;
+	font-size:80%;
+	text-align:right;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+}
+
+
 /*These are the mobile rules*/
 @media screen and (max-width: 767px) {
 
@@ -181,6 +213,7 @@ iframe
 	h2
 	{
 		font-size: 28px;
+		margin: 0;
 	}
 
 	ul
@@ -212,7 +245,8 @@ iframe
 
 	h2
 	{
-		font-size: 40px;
+		font-size: 50px;
+		margin: 0;
 	}
 
 	ul
