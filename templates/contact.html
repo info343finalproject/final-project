@@ -1,7 +1,6 @@
 <div class="container-fluid">
-	<form class="form-horizontal" ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
+	<form class="form-horizontal" ng-app="myApp" ng-controller="validateCtrl" name="myForm" method="POST" action="contact.php" enctype="multipart/form-data" novalidate>
 		<fieldset>
-			<form method="POST" action="contact.php">
 				<!-- Form Name -->
 				<legend>CONTACT</legend>
 				<div class="col-md-4">
@@ -65,6 +64,7 @@
 					  </div>
 					</div>
 				</div>
+				</fieldset>
 			</form?
 			<!-- Contact Links-->
 			<div class="col-md-4" id="call-text">
@@ -83,6 +83,5 @@
 				<a href="https://www.google.com/maps/place/1716+S+Hanford+St,+Seattle,+WA+98144/@47.575307,-122.309909,17z/data=!3m1!4b1!4m2!3m1!1s0x54906a7ddb0eb14d:0x7b0e2198053d2206">Pure Automotive Repair<br/>1716 South Hanford Street<br/>Seattle, Washington 98144</a>
 				<iframe width='80%' height='300px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/jtopasna.4a70938e/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoianRvcGFzbmEiLCJhIjoiNzI1YTRlZTFjNzRjODQ2NzJhYmRiOTkwZTBiZGE4MzYifQ.u0BRAAbAEbGgPF5_nf4Y8g'></iframe>
 			</div>
-		</fieldset>
-	</form>
+		
 </div>
