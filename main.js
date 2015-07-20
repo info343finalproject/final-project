@@ -32,7 +32,22 @@ myApp.config(function($routeProvider) {
 
 // Services page controller
 .controller('ServicesController', function($scope){
-  $scope.url = "http://conference.unavsa.org/wp-content/uploads/2015/06/SEA-pic.jpg"
+  // Item List Arrays
+  $scope.items = [];
+
+  // Add a Item to the list
+  $scope.addItem = function () {
+
+    $scope.items.push({
+      name: $scope.itemName,
+      amount: $scope.itemAmount
+    });
+  };
+
+  // Delete an item from the list
+  $scope.deleteItem = function(index) { 
+    $scope.items.splice(index, 1);     
+  };
 })
 
 //Contact page controller
@@ -60,6 +75,36 @@ $(document).ready(function () {
     $(".navbar-collapse").collapse('hide');
   });
 });
+
+// Animsition
+$(document).ready(function() {
+  
+  $(".animsition").animsition({
+  
+    inClass               :   'fade-in',
+    outClass              :   'fade-out',
+    inDuration            :    1500,
+    outDuration           :    800,
+    linkElement           :   '.animsition-link',
+    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+    loading               :    true,
+    loadingParentElement  :   '#myNavbar', //animsition wrapper element
+    loadingClass          :   'animsition-loading',
+    unSupportCss          : [ 'animation-duration',
+                              '-webkit-animation-duration',
+                              '-o-animation-duration'
+                            ],
+    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    
+    overlay               :   false,
+    
+    overlayClass          :   'animsition-overlay-slide',
+    overlayParentElement  :   'body'
+  });
+});
+
+
 
 
 

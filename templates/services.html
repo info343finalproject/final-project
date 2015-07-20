@@ -23,34 +23,39 @@
 		<div class="icon-box" style="background-image: url('icons/inspection.png');">Inspection</div>
 	</div>
 </div>
-<div class="col-md-6">
-	<table>
-		<tr>
-			<td id="impa">
-				Services 
-			</td>
-			<td id="imp">
-				Cost
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Brakes 
-			</td>
-			<td>
-				$10
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Belts
-			</td>
-			<td>
-				$10
-			</td>
-		</tr>
-	</table>
-</div>
-<div class="transparent-box">
-	<div>stuff here</div>
-</div>
+<!-- Select a service -->
+<div ng-app="myApp" ng-controller="ServicesController" class="container-fluid">  	
+    <div id="AddItem" class="col-sm-6">
+    <label>Select a service</label><br/>
+        <select ng-model="itemName">
+        	<option value="Batteries">Batteries</option>
+        	<option value="Belts">Belts</option>
+        	<option value="Brakes">Brakes</option>
+        	<option value="CV Axles">CV Axles</option>
+        	<option value="Fluids">Fluids</option>
+        	<option value="Hoses">Hoses</option>
+        	<option value="Gaskets">Gaskets</option>
+        	<option value="Shocks">Shocks</option>
+        	<option value="Struts">Struts</option>
+        	<option value="Spark Plugs">Spark Plugs</option>
+        	<option value="Timing Belts">Timing Belts</option>
+        	<option value="Water Pump">Water Pump</option>
+		</select><br/>   
+		<button ng-click="addItem()">Add to list</button>
+    </div>
+    <!-- Table of services selected -->
+    <div id="Services-Selected" class="col-sm-6">
+
+         <h4>Services Selected</h4>
+
+        <table>
+            <tr ng-repeat="item in items" class="item-unchecked">
+                <td>{{item.name}} </td>
+                <td><b>amount:</b> {{item.amount}} </td>
+                <td>
+                    <button ng-click="deleteItem($index)">Remove</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
