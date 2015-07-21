@@ -115,9 +115,7 @@ a:hover {
 	border-radius: 0;
 }
 
-.btn:focus {
-  outline: none;
-}
+
 
 /* Styling for the content boxes */
 .transparent-box, .green-box , .white-box {
@@ -187,10 +185,10 @@ a:hover {
 .icon-box {
 	background-repeat: no-repeat;
 	background-position: center;
+	border:7px solid #87E226;
 	background-color: rgba(255, 255, 255, 0.3);
 	width:200px;
 	height: 200px;
-	border:7px solid #87E226;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 60px;
@@ -233,15 +231,14 @@ form {
 }
 
 .btn {
-    padding: 14px 24px;
-    border: 0 none;
+    padding: 24px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
  
 .btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
+    outline: none;
 }
  
 button, .btn-primary {
@@ -316,7 +313,6 @@ footer {
 		display:none !important;
 	}
 
-<<<<<<< HEAD
 	#tag {
 		padding-left: 1em;
 	}
@@ -324,9 +320,6 @@ footer {
 	#tag2 {
 		padding-left: 1em;
 	}
-
-=======
->>>>>>> 578d3816efd3f4a1e0be9896a29f9ab72f0cf535
 }
 
 /*These are the desktop rules*/
