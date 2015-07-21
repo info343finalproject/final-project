@@ -191,24 +191,6 @@ a:hover {
 	background-image: url("images/transparentpixel.png");
 }
 
-.contact-table {
-   display: table;
-   border-collapse: collapse;
-   margin: 0 auto 0 auto;
-}
- 
-.contact-row {
-   display: table-row;
-}
- 
-.contact-cell {
-   display: table-cell;
-   text-align: left;
-   vertical-align: middle;
-   padding-left: 10px;
-   /*border: 1px solid black;*/
-}
-
 .contact-cell a:hover {
 	opacity: 0.6;
 }
@@ -220,13 +202,42 @@ a:hover {
   	text-align: center;
 }
 
-/*#map .row h3 {
-	text-align: right;
+/* Styling for contact form */
+form {
+	padding-top: 20px;
+	padding-left: 10%;
 }
 
-#map .row .col-sm-6 {
-	text-align: left;
-}*/
+.form-control {
+	width: 90%;
+	border-radius: 0;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+button, .btn-primary {
+    background: #87E226;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
 
 /* Styling for the map */
 iframe
