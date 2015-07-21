@@ -9,12 +9,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-    <!-- animsition CSS -->
-    <link rel="stylesheet" href="animsition/dist/css/animsition.min.css">
-    <!-- vendor js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- animsition js-->
-    <script src="animsition/dist/js/jquery.animsition.min.js"></script>
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <!-- Add angular route library here -->
@@ -37,18 +31,18 @@
             </button>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right animsition">
+            <ul class="nav navbar-nav navbar-right">
               <li role="separator" class="divider"><a href="#/" class="animsition-link"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
-              <li><a href="#/about" class="animsition-link"><span class="glyphicon glyphicon-info-sign animsition-link"></span> ABOUT</a></li>
-              <li><a href="#/services" class="animsition-link"><span class="glyphicon glyphicon-wrench animsition-link"></span> SERVICES</a></li>
-              <li><a href="#/contact" class="animsition-link"><span class="glyphicon glyphicon-phone animsition-link"></span> CONTACT</a></li>
+              <li><a href="#/about"><span class="glyphicon glyphicon-info-sign animsition-link"></span> ABOUT</a></li>
+              <li><a href="#/services"><span class="glyphicon glyphicon-wrench animsition-link"></span> SERVICES</a></li>
+              <li><a href="#/contact"><span class="glyphicon glyphicon-phone animsition-link"></span> CONTACT</a></li>
             </ul>
           </div>
         </div>
       </nav> 
     </header>
-    <div ng-app="myApp" class="animsition">
-      <div ng-view class="animsition-link"></div>
+    <div ng-app="myApp">
+      <div ng-view></div>
     </div>
     <footer>
         <p>&copy; 2015, <a href="mailto:info@pureautomotiverepair.com">INFO@PUREAUTOMOTIVEREPAIR.COM</a></p>
