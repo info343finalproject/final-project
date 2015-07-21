@@ -105,7 +105,6 @@ a:hover {
 /* Styling for the content boxes */
 .transparent-box, .green-box , .white-box {
 	width: 100%;
-	/*height: 600px;*/
 }
 
 .transparent-box {
@@ -123,11 +122,16 @@ a:hover {
 	background-image: url("images/whitepixel.png");
 }
 
-.about-box {
-  	/*width: 100%;*/
-  	color: #3E3E43;
-	min-height: 600px;*/
-	overflow: hidden;
+.about-text {
+	text-align: left;
+}
+
+.about-text img{
+	padding-left: 10px;
+}
+
+.green-text {
+	color:#87E226;
 }
 
 .split-display {
@@ -175,12 +179,10 @@ a:hover {
 	border-radius: 100px;
 }
 
-/* Styling for images */
-.services-image {
-	width: 50%;
-	height: 100%;
-	background-image: url("images/services1.jpg");
-	display: inline;
+.about-pic {
+	background-image: url('images/jeff1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 /* Styling for the map */
@@ -211,7 +213,7 @@ footer {
 		font-size: 36px;
 	}
 
-	h2
+	h2, .about-text
 	{
 		font-size: 28px;
 		margin: 0;
@@ -252,7 +254,7 @@ footer {
 		font-weight: 300;
 	}
 
-	h2
+	h2, .about-text
 	{
 		font-size: 50px;
 		margin: 0;
@@ -261,6 +263,11 @@ footer {
 	ul
 	{
 		font-size: 35px;
+	}
+
+	.about-text li {
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 	.transparent-box, .green-box , .white-box {
