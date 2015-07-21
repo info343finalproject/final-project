@@ -39,7 +39,7 @@
       $_POST = array();
     }
   }
-  header ('Refresh: 10; url=http://students.washington.edu/jeffma/test/final-project/#/contact/');
+  header ('Refresh: 3; url=http://students.washington.edu/jeffma/test/final-project/#/contact/');
 ?><!DOCTYPE html>
 <html>
   <head>
@@ -97,6 +97,7 @@
           }
         }
       ?>
+      <?php include 'templates/contact.html';?>
     </div>
   </body>
 </html>
