@@ -185,11 +185,48 @@ a:hover {
 	background-position: center;
 }
 
+.contact-box {
+	height: 700px;
+	color: #FFFFFF;
+	background-image: url("images/transparentpixel.png");
+}
+
+.contact-table {
+   display: table;
+   border-collapse: collapse;
+   margin: 0 auto 0 auto;
+}
+ 
+.contact-row {
+   display: table-row;
+}
+ 
+.contact-cell {
+   display: table-cell;
+   text-align: left;
+   vertical-align: middle;
+   padding-left: 10px;
+   /*border: 1px solid black;*/
+}
+
+.contact-cell a:hover {
+	opacity: 0.6;
+}
+
 #map {
 	position: relative;
   	top: 50%;
   	transform: translateY(-50%);
+  	text-align: center;
 }
+
+/*#map .row h3 {
+	text-align: right;
+}
+
+#map .row .col-sm-6 {
+	text-align: left;
+}*/
 
 /* Styling for the map */
 iframe
@@ -225,6 +262,10 @@ footer {
 		margin: 0;
 	}
 
+	h3 {
+		font-size: 20px;
+	}
+
 	ul
 	{
 		font-size: 25px;
@@ -236,10 +277,6 @@ footer {
 
 	#about-img1, #about-img2 {
 		display:none !important;
-	}
-
-	.about-box {
-		
 	}
 
 }
