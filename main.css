@@ -42,6 +42,8 @@ body
 {
 	font-family: 'futuraextendedregular', 'Arial', 'Verdana';
 	background-color: #A5A5A5;
+	padding-top: 80px;
+
 }
 
 #call
@@ -74,7 +76,6 @@ ul
 	min-height: 80px;
 	margin-bottom: 0;
 	border: 0;
-	/*position:fixed;*/
 }
 
 .navbar .navbar-nav {
@@ -87,11 +88,23 @@ ul
   text-align: center;
 }
 
+#tag {
+	color:#FFFFFF;
+	text-decoration:none;
+	padding-top:1em;
+}
+
+#tag2 {
+	color:#87E226;
+	text-decoration:none;
+}
+
 a {
 	text-decoration: none;
 	font-size: 20px;
 	color:#87E226;
 }
+
 a:hover {
 	text-decoration: none;
 	font-size: 20px;
@@ -100,6 +113,10 @@ a:hover {
 
 .btn {
 	border-radius: 0;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 /* Styling for the content boxes */
@@ -155,6 +172,7 @@ a:hover {
 	background-image: url("images/whitepixel.png");
 	min-height: 1200px;
 	overflow: hidden;
+	padding-bottom:200px;
 }
 
 .service-box-label {
@@ -165,6 +183,7 @@ a:hover {
 .icon-box {
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: rgba(255, 255, 255, 0.3);
 	width:200px;
 	height: 200px;
 	border:7px solid #87E226;
@@ -181,6 +200,14 @@ a:hover {
 	height: 100%;
 	background-image: url("images/services1.jpg");
 	display: inline;
+}
+
+.dropdown-menu {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+  position:absolute;
 }
 
 /* Styling for the map */
@@ -202,10 +229,9 @@ footer {
   	justify-content: center;
 }
 
-
 /*These are the mobile rules*/
 @media screen and (max-width: 767px) {
-
+	
 	h1
 	{
 		font-size: 36px;
@@ -230,8 +256,12 @@ footer {
 		display:none !important;
 	}
 
-	.about-box {
-		
+	#tag {
+		padding-left: 1em;
+	}
+
+	#tag2 {
+		padding-left: 1em;
 	}
 
 }
