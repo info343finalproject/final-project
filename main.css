@@ -185,10 +185,16 @@ a:hover {
 	background-position: center;
 }
 
+#map {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
 /* Styling for the map */
 iframe
 {
-	border: medium solid black;
+	/*border: medium solid black;*/
 }
 
 /* Footer styling */
