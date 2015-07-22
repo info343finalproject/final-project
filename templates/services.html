@@ -5,6 +5,7 @@
 </div>
 <div class="container">
     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#cart">Cart Contents</button>
+    <button type="button" class="btn" id="clear">Clear Contents</button>
     <div id="cart">
     </div>
 </div>
@@ -150,5 +151,21 @@
     </div>
 </div>
 
-
-
+<!-- gross -->
+<script>
+    //This is for specifically adding to the cart 
+    $('.dropdown-menu li').click(function()
+    {
+        var name = $(this).text();
+        if($("#" + name).length == 0)
+        {
+            $('#cart').append("<li id='" + name + "' value='1' >" + name + "</li>");
+        } 
+        else
+        {
+            var oneup = $("#" + name).val($("#" + name).val() + 1)
+            console.log(oneup)
+            $("#" + name).text(name + "x" + oneup)
+        }
+    })
+</script>
