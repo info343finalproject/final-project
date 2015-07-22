@@ -322,7 +322,10 @@ footer {
 	#tag2 {
 		padding-left: 1em;
 	}
+<<<<<<< HEAD
 }
+=======
+>>>>>>> ab4f7f25192f8c89003e4265b04dd4320839c936
 
 /*These are the desktop rules*/
 @media screen and (min-width: 768px) {
