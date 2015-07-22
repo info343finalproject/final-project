@@ -85,14 +85,10 @@ $(document).ready(function () {
   });
 });
 
-/*
-function clicked(item)
+// This will change the color a text in the navbar
+$('#styleMe').click(function()
 {
-  $('#cart').append("<p>"+ item + "</p>");
-}*/
-
-$('li').click(function()
-{
-    alert($(this).text())
+  $(this).css('background-color', 'red');
+  $('#styleMe').not(this).css('background-color', 'black');
+  
 })
-
