@@ -13,9 +13,9 @@
     <div class="row">
         <div class="col-sm-4 text-center">
             <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/battery.png')" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/battery.png')" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Electrical</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <ul class="dropdown-menu dropdown1 " aria-labelledby="dropdownMenu1" id="dropdownMenu1" >
                     <li ng-click="addItem('Battery', 150)">Battery</li>
                     <li ng-click="addItem('Starter', 150)">Starter</li>
                     <li ng-click="addItem('Alternator', 150)">Alternator</li>
@@ -23,9 +23,9 @@
                 </ul>
             </div>
             <div class="dropdown text-center">
-                <button class="btn dropdown-toggle icon-box" style="background-image: url('icons/belt.png')" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="btn dropdown-toggle icon-box" style="background-image: url('icons/belt.png')" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Belt</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <ul class="dropdown-menu dropdown2" aria-labelledby="dropdownMenu2" id="dropdownMenu2">
                     <li>Alternator</li>
                     <li>Air Conditioning Compressor</li>
                     <li>Power Steering Pump</li>
@@ -33,9 +33,9 @@
                 </ul>
             </div>
             <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/brake.png')" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/brake.png')" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Brakes</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                <ul class="dropdown-menu dropdown2 " aria-labelledby="dropdownMenu3" id="dropdownMenu3" >
                     <li>Pads</li>
                     <li>Shoes</li>
                     <li>Rotor Discs</li>
@@ -47,9 +47,9 @@
                 </ul>
             </div>
             <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/axle.png')" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/axle.png')" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Drivetrain</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                <ul class="dropdown-menu dropdown2" aria-labelledby="dropdownMenu4" id="dropdownMenu4" >
                     <li>Cv Axles</li>
                     <li>Drive Shafts</li>
                     <li>U-Joints</li>
@@ -59,9 +59,9 @@
         </div>
         <div class="col-sm-4">
             <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/oil.png')" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/oil.png')" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Fluids</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                <ul class="dropdown-menu dropdown2" aria-labelledby="dropdownMenu5" id="dropdownMenu5" >
                     <li>Oil Change</li>
                     <li>Transmission</li>
                     <li>Radiator</li>
@@ -72,30 +72,30 @@
                 </ul>
             </div>
             <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/hose.png')" type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/hose.png')" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Cooling</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu6">
+                <ul class="dropdown-menu dropdown1" aria-labelledby="dropdownMenu6" id="dropdownMenu6" >
                     <li>Radiator</li>
                     <li>Hoses</li>
                     <li>Water Pump</li>
                     <li>Thermostat</li>
-                </ul>
+                </ul> 
             </div>
             <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/filter.png')" type="button" id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/filter.png')" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Filters</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu7">
+                <ul class="dropdown-menu dropdown1" aria-labelledby="dropdownMenu7" id="dropdownMenu7" >
                     <li>Air</li>
                     <li>Cabin</li>
                     <li>Fuel</li>
                     <li>Transmission</li>
-                    <li>Oil</li>
+                    <li>Oil</li> 
                 </ul>
             </div>
             <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/hvac.png')" type="button" id="dropdownMenu8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/hvac.png')" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Heating / AC</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu8">
+                <ul class="dropdown-menu dropdown1 " aria-labelledby="dropdownMenu8" id="dropdownMenu8">
                     <li>Heater Core</li>
                     <li>Evaporator Core</li>
                     <li>Condenser</li>
@@ -106,9 +106,9 @@
         </div>
         <div class="col-sm-4">
            <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/suspension.png')" type="button" id="dropdownMenu9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/suspension.png')" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Suspension</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu9">
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu9" id="dropdownMenu9">
                     <li>Shocks</li>
                     <li>Struts</li>
                     <li>Springs / Coils</li>
@@ -118,9 +118,9 @@
                 </ul>
             </div>
             <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/sparkplug.png')" type="button" id="dropdownMenu10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/sparkplug.png')" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Ignition</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu10">
+                <ul class="dropdown-menu dropdown2" aria-labelledby="dropdownMenu10" id="dropdownMenu10" >
                     <li>Spark Plug</li>
                     <li>Spark Plug Wire</li>
                     <li>Distributor Cap</li>
@@ -129,9 +129,9 @@
                 </ul>
             </div>
             <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/exhaust.png')" type="button" id="dropdownMenu11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/exhaust.png')" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Exhaust</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu11">
+                <ul class="dropdown-menu dropdown2" aria-labelledby="dropdownMenu11" id="dropdownMenu11">
                     <li>Manifold</li>
                     <li>Muffler</li>
                     <li>Catalytic Converter</li>
@@ -139,9 +139,9 @@
                 </ul>
             </div>
             <div class="dropdown text-center">
-                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/inspection.png')" type="button" id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <button class="icon-box btn dropdown-toggle " style="background-image: url('icons/inspection.png')" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
                 <div class="service-box-label">Inspection</div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu12">
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu12"id="dropdownMenu12">
                     <li>Pre-purchase</li>
                     <li>Preventative Maintenance</li>
                     <li>Consulting</li>
