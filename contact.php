@@ -87,24 +87,24 @@
     </header>
     <div ng-app="myApp">
       <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6 split-display">
-      <div class="contact-box">
-        <!-- Map -->
-        <div id="map">
-          <iframe width='80%' height='450px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/jtopasna.4a70938e/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoianRvcGFzbmEiLCJhIjoiNzI1YTRlZTFjNzRjODQ2NzJhYmRiOTkwZTBiZGE4MzYifQ.u0BRAAbAEbGgPF5_nf4Y8g'></iframe>
-            <div>
-              <h3>1716 SOUTH HANFORD STREET<br/>
-                SEATTLE, WASHINGTON 98144<br/>
-                <a class="green-text" href="tel:206-510-7007">206.510.7007</a>
-              </h3> 
-            </div>
-            <div><a href="https://www.google.com/maps/place/1716+S+Hanford+St,+Seattle,+WA+98144/@47.575307,-122.309909,17z/data=!3m1!4b1!4m2!3m1!1s0x54906a7ddb0eb14d:0x7b0e2198053d2206" target="_blank"><img src="icons/googlemap.png"/></a></div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 split-display">
-      <div id="anchor" class="contact-box">
+	<div class="row">
+		<div class="col-md-6 split-display">
+			<div class="contact-box">
+				<!-- Map -->
+				<div id="map">
+					<iframe width='80%' height='450px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/jtopasna.4a70938e/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoianRvcGFzbmEiLCJhIjoiNzI1YTRlZTFjNzRjODQ2NzJhYmRiOTkwZTBiZGE4MzYifQ.u0BRAAbAEbGgPF5_nf4Y8g'></iframe>
+						<div>
+							<h3>1716 SOUTH HANFORD STREET<br/>
+								SEATTLE, WASHINGTON 98144<br/>
+								<a class="green-text" href="tel:206-510-7007">206.510.7007</a>
+							</h3>	
+						</div>
+						<div><a href="https://www.google.com/maps/place/1716+S+Hanford+St,+Seattle,+WA+98144/@47.575307,-122.309909,17z/data=!3m1!4b1!4m2!3m1!1s0x54906a7ddb0eb14d:0x7b0e2198053d2206" target="_blank"><img src="icons/googlemap.png"/></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 split-display">
+			 <div id="anchor" class="contact-box">
         <?php
           if (!empty($errors)) {
             echo "<br/><br/><br/><br/>";
@@ -116,8 +116,8 @@
           }
         ?>
       </div>
-    </div>
-  </div>
-    </div>
-  </body>
-</html>
+		</div>
+		<div class="row" style="background: url('images/contact1.jpg') no-repeat center;">
+			<div class="contact-box"></div>
+		</div>
+</div>
