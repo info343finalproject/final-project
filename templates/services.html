@@ -1,7 +1,19 @@
-<div class="cart container-fluid" ng-show="items.length > 0">
-    <button type="button" class="btn btn-info" ng-click="showHide()">ESTIMATE</button>
-    <div class="div-table" ng-repeat="service in items" ng-show="isVisible">
-        <div>{{service.name + ' ' + service.amount}} <button ng-click="deleteItem($index)">DELETE</button></div>
+
+<div class="div-table container-fluid" ng-show="items.length > 0">
+    <div class="div-table-row">
+        <div class="div-table-col"></div>
+        <div class="div-table-col">TOTAL ${{total}}</div>
+        <div class="div-table-col"><img id="estimate" src="icons/estimateicon.png" ng-click="showHide()"/></div>
+    </div>
+    <div class="div-table-row" ng-show="isVisible">
+        <div class="div-table-header">SERVICE</div>
+        <div class="div-table-header">PRICE</div>
+        <div class="div-table-header"></div>
+    </div>
+    <div class="div-table-row" ng-repeat="service in items" ng-show="isVisible">
+        <div class="div-table-col">{{service.name}}</div>
+        <div class="div-table-col">{{service.amount}}</div>
+        <div class="div-table-col"><button ng-click="deleteItem($index)">DELETE</button></div>
     </div>
 </div>
 <div class="green-box" style="background: url('images/services1.jpg') no-repeat center;">
@@ -160,6 +172,7 @@
         }, 350);
     })
 </script>
+
 
 
 
