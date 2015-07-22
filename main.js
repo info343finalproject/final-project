@@ -1,5 +1,6 @@
-var services
-var myApp = angular.module('myApp', ['ngRoute'])
+var services;
+var total;
+var myApp = angular.module('myApp', ['ngRoute']);
 
 myApp.config(function($routeProvider) {
   $routeProvider
@@ -34,11 +35,13 @@ myApp.config(function($routeProvider) {
 .controller('ServicesController', function($scope){
   // Item List Arrays
   services = $scope.items = [];
+  $scope.total = 0;
 
   // Add a Item to the list
   $scope.addItem = function (itemName, itemAmount) {
     $scope.itemName = itemName;
     $scope.itemAmount = itemAmount;
+    $scope.total += itemAmount;
     $scope.items.push({
       name: $scope.itemName,
       amount: $scope.itemAmount
@@ -46,8 +49,9 @@ myApp.config(function($routeProvider) {
   };
 
   // Delete an item from the list
-  $scope.deleteItem = function(index) { 
-    $scope.items.splice(index, 1);     
+  $scope.deleteItem = function(index) {
+    $scope.total -= $scope.items[index].amount;
+    $scope.items.splice(index, 1);
   };
 
   //Toggle visibility, if element is visible it will be hidden and vice versa.
@@ -85,14 +89,10 @@ $(document).ready(function () {
   });
 });
 
-/*
-function clicked(item)
+// This will change the color a text in the navbar
+$('#styleMe').click(function()
 {
-  $('#cart').append("<p>"+ item + "</p>");
-}*/
-
-$('li').click(function()
-{
-    alert($(this).text())
+  $(this).css('background-color', 'red');
+  $('#styleMe').not(this).css('background-color', 'black');
+  
 })
-
