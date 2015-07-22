@@ -95,4 +95,8 @@ $('#styleMe').click(function()
   $(this).css('background-color', 'red');
   $('#styleMe').not(this).css('background-color', 'black');
   
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> 17d1d18348e5b68eddef9be42be36ed54de4cda2
