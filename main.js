@@ -76,9 +76,14 @@ $(document).ready(function () {
   });
 });
 
+/*
+function clicked(item)
+{
+  $('#cart').append("<p>"+ item + "</p>");
+}*/
 
-
-
-
-
+$('li').click(function()
+{
+    alert($(this).text())
+})
 

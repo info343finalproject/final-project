@@ -24,8 +24,9 @@ Black = #3E3E43
          url('fonts/futuraextended-webfont.svg#futuraextendedregular') format('svg');
     /*font-weight: normal;
     font-style: normal;*/
-
 }
+
+
 
 td
 {
@@ -231,7 +232,6 @@ form {
 }
 
 .btn {
-<<<<<<< HEAD
     padding: 14px 24px;
     padding: 24px;
     font-weight: 700;
@@ -322,10 +322,6 @@ footer {
 	#tag2 {
 		padding-left: 1em;
 	}
-<<<<<<< HEAD
-
-=======
->>>>>>> aacfeb34aa34545fe8d5733cc76080a0498509d9
 }
 
 /*These are the desktop rules*/
