@@ -116,8 +116,6 @@ a:hover {
 	border-radius: 0;
 }
 
-
-
 /* Styling for the content boxes */
 .transparent-box, .green-box , .white-box {
 	width: 100%;
@@ -197,6 +195,31 @@ a:hover {
 	border-radius: 100px;
 }
 
+.icon-box:hover {
+	background-color: #A5A5A5;
+}
+
+/* Styling for the estimate table on service page */
+.div-table {
+	min-height: 1px;
+	width: 100%;
+	padding-bottom: 20px:;
+	background-color: #222222;
+	position: fixed;
+	top: 80px;
+	z-index: 9999;
+}
+
+.div-table-header {
+}
+
+.div-table-row {
+}
+
+.div-table-col {
+}
+
+
 .about-pic {
 	background-image: url('images/jeff1.jpg');
 	background-repeat: no-repeat;
@@ -230,30 +253,23 @@ form {
 	width: 90%;
 	border-radius: 0;
 }
-
-.btn {
-    padding: 14px 24px;
-    padding: 24px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
  
-.btn:focus, .btn:active:focus, .btn.active:focus {
+#singlebutton:focus, #singlebutton:active:focus, #singlebutton.active:focus, #clear-button {
     outline: none;
 }
  
-button, .btn-primary {
+#singlebutton, .btn-primary[disabled], #clear-button {
     background: #87E226;
     color: #ffffff;
+    padding: 10px 30px 10px 30px;
+    margin: 0px 5px 0px 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
 }
  
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #33a6cc;
-}
- 
-.btn-primary:active, .btn-primary.active {
-    background: #007299;
+#singlebutton:hover, #singlebutton:focus, #singlebutton:active, #clear-button {
+    background: #87E226;
     box-shadow: none;
 }
 
@@ -263,6 +279,7 @@ button, .btn-primary {
   text-align: center;
   transform: translate(-50%, 0);
   position:absolute;
+  cursor: pointer;
 }
 
 /* Styling for the map */

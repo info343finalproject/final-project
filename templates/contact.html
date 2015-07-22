@@ -74,8 +74,9 @@
 							<!-- Button -->
 							<div class="form-group">
 							  <label class="form-label" for="singlebutton"></label>
-							  <div class="controls">
-							    <input id="singlebutton" name="singlebutton" class="btn btn-primary"
+							  <div>
+							  	<button id="clear-button" class="btn btn-primary" type="button" ng-click="resetForm()">RESET</button>
+							  	<input id="singlebutton" name="singlebutton" class="btn btn-primary"
 							    ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid || myForm.subject.$dirty && myForm.subject.$invalid || myForm.message.$dirty && myForm.message.$invalid || myForm.user.$pristine || myForm.email.$pristine ||  myForm.subject.$pristine ||  myForm.message.$pristine" type="submit">
 							  </div>
 							</div>

@@ -1,5 +1,4 @@
 <?php 
-  //header ('Refresh: 10; url=http://students.washington.edu/jeffma/test/final-project/#/contact/');
   // Check if the form has been submitted:
   if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
     $name = htmlspecialchars($_POST['user']);
@@ -12,22 +11,22 @@
 
     // Check name
     if (empty($name)) {
-      $errors[] = "Please enter your name!";
+      $errors[] = "PLEASE ENTER YOUR NAME!";
     }
 
     // Check email address
     if (empty($email) or !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $errors[] = "Please enter a valid email address!";
+      $errors[] = "PLEASE ENTER A VALID EMAIL ADDRESS!";
     }
 
     // Check subject
     if (empty($subject)) {
-      $errors[] = "Please enter a subject!";
+      $errors[] = "PLEASE ENTER A SUBJECT!";
     }
 
     // Check message
     if (empty($message)) {
-      $errors[] = "Please enter a message!";
+      $errors[] = "PLEASE ENTER A MESSAGE!";
     }
 
     if (empty($errors)) {
@@ -39,8 +38,10 @@
       $_POST = array();
     }
   }
+  // Refresh page after 3 seconds
   header ('Refresh: 3; url=http://students.washington.edu/jeffma/test/final-project/#/contact/');
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -51,12 +52,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-    <!-- animsition CSS -->
-    <link rel="stylesheet" href="animsition/dist/css/animsition.min.css">
-    <!-- vendor js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- animsition js-->
-    <script src="animsition/dist/js/jquery.animsition.min.js"></script>
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <!-- Add angular route library here -->
@@ -65,13 +60,14 @@
     <link href = "main.css" rel="stylesheet" type = "text/css"/>
     <title>PURE AUTOMOTIVE REPAIR</title>
   </head>
-  <body>
+  <body onload='location.href="#anchor"'>
     <header>
       <!-- Nav Bar -->
-      <nav class="navbar navbar-inverse navbar-static-top">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-          <div class="navbar-header animsition">
-            <a class="navbar-brand animsition-link " id="tag" href="#/">PURE AUTOMOTIVE REPAIR</a>
+          <div class="navbar-header">
+            <a id="tag" href="#/">PURE</a>
+            <br/><a id="tag2" href="#/">AUTOMOTIVE REPAIR</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -79,25 +75,49 @@
             </button>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right animsition">
-              <li role="separator" class="divider"><a href="#/" class="animsition-link"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-              <li><a href="#/about" class="animsition-link"><span class="glyphicon glyphicon-info-sign animsition-link"></span> About</a></li>
-              <li><a href="#/services" class="animsition-link"><span class="glyphicon glyphicon-wrench animsition-link"></span> Services</a></li>
-              <li><a href="#/contact" class="animsition-link"><span class="glyphicon glyphicon-phone animsition-link"></span> Contact</a></li>
+            <ul class="nav navbar-nav navbar-right">
+              <li role="separator" class="divider"><a href="#/"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+              <li><a href="#/about"><span class="glyphicon glyphicon-info-sign"></span> ABOUT</a></li>
+              <li><a href="#/services"><span class="glyphicon glyphicon-wrench"></span> SERVICES</a></li>
+              <li><a href="#/contact"><span class="glyphicon glyphicon-phone"></span> CONTACT</a></li>
             </ul>
           </div>
         </div>
       </nav> 
     </header>
-    <div ng-app="myApp" class="animsition">
-      <?php
-        if (!empty($errors)) {
-          foreach ($errors as $msg) {
-            echo " - $msg<br/> \n";
+    <div ng-app="myApp">
+      <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 split-display">
+      <div class="contact-box">
+        <!-- Map -->
+        <div id="map">
+          <iframe width='80%' height='450px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/jtopasna.4a70938e/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoianRvcGFzbmEiLCJhIjoiNzI1YTRlZTFjNzRjODQ2NzJhYmRiOTkwZTBiZGE4MzYifQ.u0BRAAbAEbGgPF5_nf4Y8g'></iframe>
+            <div>
+              <h3>1716 SOUTH HANFORD STREET<br/>
+                SEATTLE, WASHINGTON 98144<br/>
+                <a class="green-text" href="tel:206-510-7007">206.510.7007</a>
+              </h3> 
+            </div>
+            <div><a href="https://www.google.com/maps/place/1716+S+Hanford+St,+Seattle,+WA+98144/@47.575307,-122.309909,17z/data=!3m1!4b1!4m2!3m1!1s0x54906a7ddb0eb14d:0x7b0e2198053d2206" target="_blank"><img src="icons/googlemap.png"/></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 split-display">
+      <div id="anchor" class="contact-box">
+        <?php
+          if (!empty($errors)) {
+            echo "<br/><br/><br/><br/>";
+            foreach ($errors as $msg) {
+              echo "<h3> - $msg</h3><br/><br/> \n";
+            }
+          } else {
+            echo "<br/><br/><h3>MESSAGE SENT</h3>";
           }
-        }
-      ?>
-      <?php include 'templates/contact.html';?>
+        ?>
+      </div>
+    </div>
+  </div>
     </div>
   </body>
 </html>

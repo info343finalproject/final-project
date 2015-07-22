@@ -1,0 +1,88 @@
+﻿<html>
+<head>   
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
+    <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+    <style type="text/css">
+        .custom-date-style {
+	        background-color: red !important;
+        }
+    </style>
+    <script src="./jquery.js"></script>
+    <script src="./jquery.datetimepicker.js"></script>
+</head>
+<body>   
+    <main>
+        <h1>Schedule a diagnostic appointment</h1>
+        <div id="display-schedule-confirmationMsg"/>
+        <div/>
+        <input id="datetimepicker" type="text" value="">        
+        <input id="submit" type="submit" value="submit"/>
+        
+    </main>
+</body>
+
+<script>   
+    var disabledTimes =
+    [
+        {
+            "date": "07/21/2015",
+            "disabledTimes":
+	        [
+		        "08:00"
+	        ]
+        },
+        {
+            "date": "07/22/2015",
+            "disabledTimes":
+	        [
+		        "08:00", "12:00"
+	        ]
+        }
+    ];
+    var date;
+
+    var allowedTime = ["08:00", "10:00", "12:00", "14:00", "16:00"];
+    var disabledTimeForDate; 
+    
+    $(document).ready(function () {
+        var newContent=""; 
+        $.each(disabledTimes, function (index, value) {
+            if (value.date == "07/21/2015")
+            {
+                $.each(allowedTime, function (i, goodTime) {
+                    $.each(value.disabledTimes, function (j, badTime) {
+                        if (goodTime == badTime)
+                            allowedTime.splice(i, 1);
+                       
+                    });
+                });
+            }
+        });
+
+        $('#datetimepicker').datetimepicker({
+            allowTimes: allowedTime,
+            onSelectTime: function (dp, $input) {
+                var defaultMsg = "Your diagnostic schedule is confirmed on ";       
+                newContent = defaultMsg + dp;  
+                //event to save true/false for allowed time
+            }
+        });
+
+        $('#submit').click(function (event) {   
+            $('#display-schedule-confirmationMsg').empty().append(newContent);
+            $('#display-schedule-confirmationMsg').show();
+        });
+        
+    });
+
+    //alert(allowedTime);
+    $('#datetimepicker').datetimepicker({
+        allowTimes: allowedTime,
+        onChangeDateTime: function (dp, $input) {
+            //alert($input.val());
+            //event to save true/false for allowed time
+        }
+    });
+</script>
+</html>
